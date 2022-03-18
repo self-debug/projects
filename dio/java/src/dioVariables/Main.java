@@ -28,7 +28,7 @@ public class Main {
 		//System.out.println (i);
 		System.out.println ("Aritmetico");
 		//aritmetico();
-		numeroValido(61);
+		numeroValido(1);
 		//numeroValido(0);
 			
 	}
@@ -47,11 +47,13 @@ public class Main {
 
 	private static void aritmetico(int i) {
 		
+		System.out.println ("i:" + i);
 		//int i = 2;
-		int k = i + ++i;
-		
-		System.out.println ("i:" + i);			
+		int k = ++i;
+		int j = k + 1;
+						
 		System.out.println ("k:" + k);
+		System.out.println ("j:" + j);
 			
 	}
 
