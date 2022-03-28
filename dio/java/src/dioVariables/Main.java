@@ -26,10 +26,11 @@ public class Main {
 		int i = ++k;
 		
 		//System.out.println (i);
-		System.out.println ("Aritmetico");
+		//System.out.println ("Aritmetico");
 		//aritmetico();
-		numeroValido(1);
+		//numeroValido(1);
 		//numeroValido(0);
+		Test(30);
 			
 	}
 	
@@ -56,5 +57,18 @@ public class Main {
 		System.out.println ("j:" + j);
 			
 	}
+	
+	
+	
+	  public static void Test(int minutos) {
+	        //int minutos;
+	        //Scanner input = new Scanner(System.in);
+	        //minutos = input.nextInt();
+	        int K = (minutos)/2;
+	        System.out.printf("%d minutos\n",K); // Digite aqui o calculo dos minutos
+	     }  
+	
+	
+
 
 }
