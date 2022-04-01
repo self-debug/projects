@@ -18,7 +18,6 @@ public class Conta implements iConta {
         //this.cliente.cpf = "78419506168";
     }
 
-
     @Override
     public void sacar(double valor) {
         // TODO Auto-generated method stub
@@ -30,12 +29,19 @@ public class Conta implements iConta {
         // TODO Auto-generated method stub
         this.saldo += valor;
     }
+    
+    @Override
+    public void imprimirSaldo() {
+        // TODO Auto-generated method stub
+        
+    }
 
     @Override
-    public void transferir(double valor, ContaCorrente contaDestino) {
+    public void transferir(double valor, iConta contaDestino) {
         // TODO Auto-generated method stub
         this.sacar(valor);
         contaDestino.depositar(valor);
+        
     }
 
     public int getAgencia() {
@@ -58,9 +64,5 @@ public class Conta implements iConta {
     }
 
 
-    @Override
-    public void imprimirSaldo() {
-        // TODO Auto-generated method stub
-        
-    }
+  
 }
