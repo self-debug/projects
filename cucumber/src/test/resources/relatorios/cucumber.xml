@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="23.981">
+    <testcase classname="Calculadora básica" name="Validar Soma" time="3.865">
+        <system-out><![CDATA[Dado que tenho o número 10..................................................passed
+Quando eu adiciono 20.......................................................passed
+Entao o resultado é igual a 30..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Calculadora básica" name="Validar Soma 2" time="3.331">
+        <system-out><![CDATA[Dado que tenho o número 1...................................................passed
+Quando eu adiciono 5........................................................passed
+Entao o resultado é igual a 6...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Calculadora básica" name="Validar Soma 3" time="3.349">
+        <system-out><![CDATA[Dado que tenho o número 11..................................................passed
+Quando eu adiciono 20.......................................................passed
+Entao o resultado é igual a 31..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Calculadora básica" name="Validar Soma 4" time="3.329">
+        <system-out><![CDATA[Dado que tenho o número 20..................................................passed
+Quando eu adiciono 20.......................................................passed
+Entao o resultado é igual a 40..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Calculadora básica" name="Validar Soma 5" time="3.335">
+        <system-out><![CDATA[Dado que tenho o número 70..................................................passed
+Quando eu adiciono 20.......................................................passed
+Entao o resultado é igual a 90..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Calculadora básica" name="Validar Soma 6" time="3.323">
+        <failure message="ERRO AO VALIDAR====&gt;&gt;&gt;&gt; expected:&lt;131&gt; but was:&lt;130&gt;" type="java.lang.AssertionError"><![CDATA[Dado que tenho o número 110.................................................passed
+Quando eu adiciono 20.......................................................passed
+Entao o resultado é igual a 131.............................................failed
+
+StackTrace:
+java.lang.AssertionError: ERRO AO VALIDAR====>>>> expected:<131> but was:<130>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at steps.CalculadoraStep.oResultadoÉIgualA(CalculadoraStep.java:32)
+	at ✽.o resultado é igual a 131(file:///C:/Projetos/projects/cucumber/src/test/resources/features/calculadora.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="Calculadora básica" name="Validar Soma 7" time="3.355">
+        <system-out><![CDATA[Dado que tenho o número 2...................................................passed
+Quando eu adiciono 20.......................................................passed
+Entao o resultado é igual a 22..............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
